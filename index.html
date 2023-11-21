@@ -1,0 +1,125 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anita Borg Bio</title>
+    <style>
+      #img-container {
+        padding-left: 50px;
+      }
+      .overview img {
+        width: 100px;
+      }
+      #image-info {
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Anita Borg Bio</h1>
+      <nav>
+        <a href="#overview">Overview</a>
+        <a href="#career">Career</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Webmaster</a>
+      </nav>
+    </header>
+    <section class="overview" id="overview">
+      <h2>Overview</h2>
+      <div id="img-container">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Anita_Borg.jpg/220px-Anita_Borg.jpg"
+          alt=""
+        />
+        <p id="image-info">
+          By Google Anita Borg 2011 Scholarship, Fair use,
+          https://en.wikipedia.org/w/index.php? curid=40824254
+        </p>
+      </div>
+      <p>
+        Anita Borg (January 17, 1949 - April 6, 2003) was an American computer
+        scientist celebrated for advocating for women's representation and
+        professional advancement in technology. She founded the Institute for
+        Women and Technology and the Grace Hopper Celebration of Women in
+        Computing.
+      </p>
+    </section>
+    <section id="carrer">
+      <h2>Career</h2>
+      <p>
+        After receiving her PhD, Borg spent four years building a fault tolerant
+        Unix-based operating system, first for Auragen Systems Corp. of New
+        Jersey and then with Nixdorf Computer in Germany.
+      </p>
+      <ol>
+        <li>Auragen Systems Corp.</li>
+        <li>Nixorf Computer</li>
+        <li>Digital Equipment Corporation</li>
+        <li>Institute for Women and Technology</li>
+      </ol>
+    </section>
+    <section id="awards">
+      <h2>Awards and recognition</h2>
+      <p>
+        Borg was recognized for her accomplishments as a computer scientist, as
+        well as for her work on behalf of women in computing.
+      </p>
+      <ul>
+        <li>Augusta Ada Lovelace Award</li>
+        <li>Heinz Award</li>
+        <li>EFF Pioneer Award</li>
+      </ul>
+    </section>
+    <footer id="contact">
+      <h2>Contact the Webmaster</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <form action="#">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" value="type your email" />
+
+        <label for="email">Message</label>
+        <input type="text" id="message" name="text" value="type your message" />
+        <input type="submit" value="Submit" />
+      </form>
+    </footer>
+  </body>
+</html>
